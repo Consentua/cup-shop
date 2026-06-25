@@ -104,7 +104,7 @@ export default {
         let tid = '63'; // Template ID
         var iframe = document.querySelector('#cookie-consent-iframe');
         var cookie_cwrap = new ConsentuaUIWrapper(iframe, this.$store.state.cid, this.$store.state.consentuaUID, tid, this.$store.state.sid, this.$store.state.skey, this.cb_msg, 'en', {
-            ix: "https://kni-test-node.herokuapp.com/cup-cookie-consent.html"
+            ix: "/consent-interactions/cup-cookie-consent.html"
         });
         // set cb
         cookie_cwrap.onset = this.cb_set;
